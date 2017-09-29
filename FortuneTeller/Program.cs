@@ -13,13 +13,13 @@ namespace FortuneTeller
             //Part one
 
             Console.WriteLine("Hello! Please enter your first name");
-           string userfirstName = (Console.ReadLine());
+           string userfirstName = (Console.ReadLine().ToLower());
 
             Console.WriteLine("Thank you! Now please enter your last name");
-            string userlastName = (Console.ReadLine());
+            string userlastName = (Console.ReadLine().ToLower());
 
             Console.WriteLine("Great, now how old are you?");
-            string userAge = (Console.ReadLine());
+            int userAge = int.Parse(Console.ReadLine()); 
 
             Console.WriteLine("Interesting, now please enter your birth month as a number");
             int userbirthMonth = int.Parse(Console.ReadLine());
@@ -43,7 +43,7 @@ namespace FortuneTeller
             }
 
             Console.WriteLine("How many siblings do you have?");
-            string userSiblings = (Console.ReadLine());
+            int userSiblings = int.Parse(Console.ReadLine());
 
             //Part two
 
@@ -54,17 +54,76 @@ namespace FortuneTeller
 
             if (userCompliment == "monica is the best") 
             {
-                Console.WriteLine("Thank you, now press enter");
+                Console.WriteLine("WHY THANK YOU, YOUR FORTUNE IS.....");
            }
 
             else
             {
                 Console.WriteLine("You must compliment me for your fortune!!"); 
             }
+           
+            // If the age is odd or even RETIRE
+            if (userAge % 2 == 0)
+            {
+                Console.WriteLine(userfirstName + " " + userlastName + " will retire in 50 years");
+            
+            }
+            else
+            {
+                Console.WriteLine(userfirstName + " " + userlastName + " will retire in 10 years with a glorious pension!!");
+            }
+
+            //birth month MONEY
+             
+          
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+            //number of siblings
+
+            if (userSiblings == 0)
+            {
+                Console.WriteLine("Your vaction will be lonley since you");
+                Console.WriteLine("have no siblings.. but your get away home ");
+                Console.WriteLine("will be in Miami, Florida!");
+            }
+
+            else if (userSiblings == 1)
+            {
+                Console.WriteLine("Your vacation home will be in the beautiful Venice, Italy");
+            }
+
+            else if (userSiblings == 2)
+            {
+                Console.WriteLine("Your beautiful vacation home will be on the beach in Cancun, Mexico!");
+            }
+            else if (userSiblings == 3)
+            {
+                Console.WriteLine("Your future vacation home will be in Athens, Greece!");
+            }
+        else if (userSiblings < 3)
+            {
+                Console.WriteLine("You and your many siblings will have a great time");
+                Console.WriteLine("in your future home in The Bahamas!!!");
+            }
+
+            else if (userSiblings > 0 )
+            {
+                Console.WriteLine("You cant fool me... for lying your vacation home will be in Pittsburg, Pennsylvania.");
+            }
+
+            
         }
     }
 }
