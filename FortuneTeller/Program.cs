@@ -33,7 +33,7 @@ namespace FortuneTeller
             if ("help" == userfavColor)
             {
                 Console.WriteLine("Choose from the colors, red, orange, yellow, green, blue, indigo, or violet");
-                string userHelp = (Console.ReadLine().ToLower());
+                userfavColor = (Console.ReadLine().ToLower());
             }
 
             else
@@ -59,7 +59,9 @@ namespace FortuneTeller
 
             else
             {
-                Console.WriteLine("You must compliment me for your fortune!!"); 
+                Console.WriteLine("You must compliment me for your fortune!!");
+                userCompliment = (Console.ReadLine().ToLower());
+                Console.WriteLine("WHY THANK YOU, YOUR FORTUNE IS....");
             }
            
             // If the age is odd or even RETIRE
@@ -84,7 +86,7 @@ namespace FortuneTeller
             {
                 Console.WriteLine("with 3,000 dollars in the bank!");
             }
-            if (userbirthMonth == 9|| userbirthMonth == 10 || userbirthMonth == 12)
+            if (userbirthMonth == 9|| userbirthMonth == 10 || userbirthMonth == 11 || userbirthMonth == 12)
             {
                 Console.WriteLine("with 10,000 in the bank!!!!! Wow!!");
             }
@@ -105,24 +107,64 @@ namespace FortuneTeller
 
             else if (userSiblings == 2)
             {
-                Console.WriteLine("Your beautiful vacation home will be on the beach in Cancun, Mexico!");
+                Console.WriteLine("Your beautiful vacation home will be on the beach in Cancun, Mexico");
             }
             else if (userSiblings == 3)
             {
-                Console.WriteLine("Your future vacation home will be in Athens, Greece!");
+                Console.WriteLine("Your future vacation home will be in Athens, Greece");
             }
         else if (userSiblings < 3)
             {
                 Console.WriteLine("You and your many siblings will have a great time");
-                Console.WriteLine("in your future home in The Bahamas!!!");
+                Console.WriteLine("in your future home in The Bahamas");
             }
 
             else if (userSiblings > 0 )
             {
-                Console.WriteLine("You cant fool me... for lying your vacation home will be in Pittsburg, Pennsylvania.");
+                Console.WriteLine("You cant fool me... for lying your vacation home will be in Pittsburg, Pennsylvania");
             }
 
+            // fav color TRANSPORTATION 
+
+            if (userfavColor == "red")
+            {
+                Console.WriteLine("with your be drving a red Mazerati!");
+
+            }
+            else if (userfavColor == "blue")
+            {
+                Console.WriteLine("with your blue PT Cruiser.");
+            }
+            else if (userfavColor == "yellow")
+            {
+                Console.WriteLine("with your yellow school bus.");
+            }
+            else if (userfavColor == "violet") 
+            {
+                Console.WriteLine("with your violet segway"); 
+            }
+
+            else if (userfavColor == "indigo")
+            {
+                Console.WriteLine("with your indigo razor scooter.");
+            }
+            else if (userfavColor == "orange")
+            {
+                Console.WriteLine("with your orange hot air ballon");
+            }
+            else if (userfavColor == "green")
+            {
+                Console.WriteLine(" with your green Ferrari");
+            }
             
+
+
+
+
+
+
+
+
         }
     }
 }
