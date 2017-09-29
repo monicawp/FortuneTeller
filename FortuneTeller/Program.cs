@@ -70,25 +70,24 @@ namespace FortuneTeller
             }
             else
             {
-                Console.WriteLine(userfirstName + " " + userlastName + " will retire in 10 years with a glorious pension!!");
+                Console.WriteLine(userfirstName + " " + userlastName + " will retire in 10 years with a glorious pension,");
             }
 
             //birth month MONEY
-             
-          
 
+            if (userbirthMonth == 1 || userbirthMonth == 2 || userbirthMonth == 3 || userbirthMonth == 4) 
+            {
+                Console.WriteLine("with 300 dollars in the bank.. time to start saving.");
+            }
 
-
-
-
-
-
-
-
-
-
-
-
+            if (userbirthMonth == 5 || userbirthMonth == 6 || userbirthMonth == 7 || userbirthMonth == 8)
+            {
+                Console.WriteLine("with 3,000 dollars in the bank!");
+            }
+            if (userbirthMonth == 9|| userbirthMonth == 10 || userbirthMonth == 12)
+            {
+                Console.WriteLine("with 10,000 in the bank!!!!! Wow!!");
+            }
 
             //number of siblings
 
