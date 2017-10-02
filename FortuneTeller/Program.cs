@@ -13,13 +13,13 @@ namespace FortuneTeller
             //Part one
 
             Console.WriteLine("Hello! Please enter your first name");
-           string userfirstName = (Console.ReadLine().ToLower());
+            string userfirstName = (Console.ReadLine().ToLower());
 
             Console.WriteLine("Thank you! Now please enter your last name");
             string userlastName = (Console.ReadLine().ToLower());
 
             Console.WriteLine("Great, now how old are you?");
-            int userAge = int.Parse(Console.ReadLine()); 
+            int userAge = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Interesting, now please enter your birth month as a number");
             int userbirthMonth = int.Parse(Console.ReadLine());
@@ -39,23 +39,30 @@ namespace FortuneTeller
             else
             {
                 Console.WriteLine("Next question..");
-                
+
             }
 
             Console.WriteLine("How many siblings do you have?");
             int userSiblings = int.Parse(Console.ReadLine());
 
+
+
+
             //Part two
+
+
+
+
 
             Console.WriteLine("What an interesting life you lead, type \"monica is the best\" for your fortune");
             string userCompliment = (Console.ReadLine().ToLower());
 
             // Well im giving you your fortune...I think I deserve some recognition..
 
-            if (userCompliment == "monica is the best") 
+            if (userCompliment == "monica is the best")
             {
                 Console.WriteLine("WHY THANK YOU, YOUR FORTUNE IS.....");
-           }
+            }
 
             else
             {
@@ -63,12 +70,12 @@ namespace FortuneTeller
                 userCompliment = (Console.ReadLine().ToLower());
                 Console.WriteLine("WHY THANK YOU, YOUR FORTUNE IS....");
             }
-           
+
             // If the age is odd or even RETIRE
             if (userAge % 2 == 0)
             {
                 Console.WriteLine(userfirstName + " " + userlastName + " will retire in 50 years");
-            
+
             }
             else
             {
@@ -77,7 +84,7 @@ namespace FortuneTeller
 
             //birth month MONEY
 
-            if (userbirthMonth == 1 || userbirthMonth == 2 || userbirthMonth == 3 || userbirthMonth == 4) 
+            if (userbirthMonth == 1 || userbirthMonth == 2 || userbirthMonth == 3 || userbirthMonth == 4)
             {
                 Console.WriteLine("with 300 dollars in the bank.. time to start saving.");
             }
@@ -86,7 +93,7 @@ namespace FortuneTeller
             {
                 Console.WriteLine("with 3,000 dollars in the bank!");
             }
-            if (userbirthMonth == 9|| userbirthMonth == 10 || userbirthMonth == 11 || userbirthMonth == 12)
+            if (userbirthMonth == 9 || userbirthMonth == 10 || userbirthMonth == 11 || userbirthMonth == 12)
             {
                 Console.WriteLine("with 10,000 in the bank!!!!! Wow!!");
             }
@@ -97,7 +104,7 @@ namespace FortuneTeller
             {
                 Console.WriteLine("Your vaction will be lonley since you");
                 Console.WriteLine("have no siblings.. but your get away home ");
-                Console.WriteLine("will be in Miami, Florida!");
+                Console.WriteLine("will be in Miami, Florida");
             }
 
             else if (userSiblings == 1)
@@ -113,40 +120,40 @@ namespace FortuneTeller
             {
                 Console.WriteLine("Your future vacation home will be in Athens, Greece");
             }
-        else if (userSiblings < 3)
+            else if (userSiblings < 3)
             {
                 Console.WriteLine("You and your many siblings will have a great time");
                 Console.WriteLine("in your future home in The Bahamas");
             }
 
-            else if (userSiblings > 0 )
+            else if (userSiblings > 0)
             {
-                Console.WriteLine("You cant fool me... for lying your vacation home will be in Pittsburg, Pennsylvania");
+                Console.WriteLine("Your vacation home will be in Pittsburg, Pennsylvania");
             }
 
             // fav color TRANSPORTATION 
 
             if (userfavColor == "red")
             {
-                Console.WriteLine("with your be drving a red Mazerati!");
+                Console.WriteLine("where you can drive your red Mazerati!");
 
             }
             else if (userfavColor == "blue")
             {
-                Console.WriteLine("with your blue PT Cruiser.");
+                Console.WriteLine("where you can drive your blue PT Cruiser.");
             }
             else if (userfavColor == "yellow")
             {
                 Console.WriteLine("with your yellow school bus.");
             }
-            else if (userfavColor == "violet") 
+            else if (userfavColor == "violet")
             {
-                Console.WriteLine("with your violet segway"); 
+                Console.WriteLine("where you can ride your violet segway");
             }
 
             else if (userfavColor == "indigo")
             {
-                Console.WriteLine("with your indigo razor scooter.");
+                Console.WriteLine("where you can ride your indigo razor scooter.");
             }
             else if (userfavColor == "orange")
             {
@@ -154,9 +161,10 @@ namespace FortuneTeller
             }
             else if (userfavColor == "green")
             {
-                Console.WriteLine(" with your green Ferrari");
+                Console.WriteLine(" where you can drive your green Ferrari");
             }
-            
+
+
 
 
 
